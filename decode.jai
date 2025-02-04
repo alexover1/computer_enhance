@@ -1,17 +1,5 @@
 #import "Basic";
 #import "File";
-#import "Command_Line";
-
-register_table :: [2]string.[
-    .["al", "ax"],
-    .["cl", "cx"],
-    .["dl", "dx"],
-    .["bl", "bx"],
-    .["ah", "sp"],
-    .["ch", "bp"],
-    .["dh", "si"],
-    .["bh", "di"],
-];
 
 main :: () {
     options := get_command_line_arguments();
@@ -56,7 +44,13 @@ main :: () {
     }
 }
 
-
-Options :: struct {
-    input_file: string;
-}
+register_table :: [2]string.[
+    .["al", "ax"],
+    .["cl", "cx"],
+    .["dl", "dx"],
+    .["bl", "bx"],
+    .["ah", "sp"],
+    .["ch", "bp"],
+    .["dh", "si"],
+    .["bh", "di"],
+];
